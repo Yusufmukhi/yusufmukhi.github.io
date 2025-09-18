@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex justify-center items-center min-h-screen">
+        <!-- Added pt-16 for navbar spacing -->
+        <div class="bg-white shadow-lg rounded-lg p-6 w-80">
+            <!-- Company Logo -->
+            <div class="flex justify-center mb-4">
+                <img src="images.jpg" alt="Myriad Logo" class="h-20">
+            </div>
+
+            <!-- Login Heading -->
+            <h1 class="text-3xl font-bold text-orange-600 mb-6 text-center">Enquiry</h1>
+
+            <!-- Enquiry Form -->
+            <form action="thank.html" method="get">
+                <div class="mb-4">
+                    <label for="enquiry" class="block text-left font-semibold text-gray-600">Enquiring for Office
+                        Lockers</label>
+                    <input
+                        class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none mt-2"
+                        type="text" name="enquiry" id="enquiry" placeholder="Enter details here" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold text-gray-600">Email</label>
+                    <input
+                        class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none mt-2"
+                        type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Mobile Number Field -->
+                <div class="mb-6">
+                    <label for="number" class="block text-left font-semibold text-gray-600">Mobile Number</label>
+                    <input
+                        class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none mt-2"
+                        type="tel" name="number" id="number" placeholder="Enter your mobile number" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+                    type="submit">
+                    <a href="thank.html">Send an Enquiry</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

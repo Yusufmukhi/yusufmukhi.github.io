@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myriad Storage</title>
+
+    <!-- Tailwind CSS -->
+    <link href="output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-orange-50" style="margin-bottom: -200px;">
+
+    <!-- Navigation -->
+
+
+    <nav class="bg-gray-800 p-4 w-full fixed top-0 left-0 shadow-lg z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center space-x-2">
+                <img src="images.jpg" alt="Myriad Logo" class="h-10 w-10 rounded-full">
+                <a href="#" class="text-orange-500 text-2xl font-semibold">Myriad Storage</a>
+            </div>
+            <ul class="flex space-x-8">
+                <li><a href="Home.html" class="text-gray-200 hover:text-orange-500 transition duration-300">Home</a>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="text-gray-200 hover:text-orange-500 transition duration-300">Products</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute hidden group-hover:block bg-gray-800 text-gray-200 rounded-lg shadow-lg w-52 -left-10 cursor-pointer">
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2 rounded-md"><a href="#carousel1">Compactor
+                                Storage</a></li>
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2"><a href="#carousel2">Pedestal Cabinet</a></li>
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2"><a href="#carousel3">Office Locker</a></li>
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2"><a href="#carousel4">Gym Lockers</a></li>
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2"><a href="#carousel5">Mobile Compactor</a></li>
+                        <li class="p-2 hover:bg-gray-700 px-4 py-2"><a href="#carousel6">Industrial Lockers</a></li>
+                    </ul>
+
+                </li>
+                <li class="relative group">
+                    <a href="#" class="text-gray-200 hover:text-orange-500 transition duration-300">Login/SignUp</a>
+                    <!-- Dropdown Menu -->
+
+                    <ul
+                        class="absolute hidden group-hover:block bg-gray-800 text-gray-200 rounded-lg shadow-lg w-52 -left-10 cursor-pointer">
+                        <a href="Login.html">
+                            <li class="p-2 hover:bg-gray-700 px-4 py-2 rounded-md">Login</li>
+                        </a>
+
+                        <a href="Signup.html">
+                            <li class="p-2 hover:bg-gray-700 px-4 py-2">SignUp</li>
+                        </a>
+
+                    </ul>
+
+                </li>
+                </li>
+                <li><a href="#about-us" class="text-gray-200 hover:text-orange-500 transition duration-300">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="sm:pt-56 pt-28"> <!-- Adjusted padding-top to prevent overlap -->
+        <!-- Main Header -->
+        <div class="text-center px-6">
+            <h1 class="text-3xl font-semibold text-gray-900">
+                Maximize Your Storage Space with Our Innovative Compactor Systems
+            </h1>
+            <h1 class="text-3xl font-semibold text-gray-900 pt-8">
+                Explore Our Range of Compactor Storage Systems
+            </h1>
+        </div>
+
+
+    </div>
+    <div class="grid sm:grid-cols-3 grid-cols-2 grid-rows-2 gap-8 pt-14 mx-8 lg:mx-32">
+        <a href="#carousel1"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 hover:shadow-xl transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold">Compactor Storage</span>
+        </a>
+        <a href="#carousel2"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold ">Pedestal Cabinet</span>
+        </a>
+        <a href="#carousel3"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold">Office Locker</span>
+        </a>
+        <a href="#carousel4"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold">Gym Lockers</span>
+        </a>
+        <a href="#carousel5"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold">Mobile Compactor</span>
+        </a>
+        <a href="#carousel6"
+            class="block bg-white rounded-lg shadow-lg hover:bg-orange-200 transition duration-300 p-6 text-center border border-orange-500">
+            <span class="text-orange-500 font-bold">Industrial Lockers</span>
+        </a>
+    </div>
+    <div>
+        <div class="relative sm:bg-gray-100 sm:mt-20   ">
+            <!-- Carousel Section -->
+            <div class="relative overflow-hidden rounded-lg sm:block hidden">
+                <div class="flex transition-transform duration-500 ease-in-out" id="carouselSlides">
+                    <div class="flex-shrink-0 w-full">
+                        <img src="mc2.jpg" alt="Image 1" class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="flex-shrink-0 w-full">
+                        <img src="File-Compactor-storage-System.jpg" alt="Image 2"
+                            class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="flex-shrink-0 w-full">
+                        <img src="mc3.jpg" alt="Image 3" class="w-full h-[500px] object-cover">
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button onclick="moveSlide(-1)"
+                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600">
+                    &#10094;
+                </button>
+                <button onclick="moveSlide(1)"
+                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600">
+                    &#10095;
+                </button>
+            </div>
+
+            <!-- Text Section with Adjusted Position -->
+            <div
+                class="sm:absolute sm:top-1/2 sm:left-1/2 relative left-[240px] top-[200px]  sm:w-3/4 transform -translate-x-1/2 -translate-y-1/2 text-center p-4">
+                <div class="sm:text-white text-black">
+                    <p class="text-3xl font-serif mb-4">What is a compactor?</p>
+                    <p class="max-w-lg mx-auto">
+                        A compactor is a device or machine used to compress or compact materials, typically to
+                        reduce
+                        their volume. In the context of waste management, a compactor is used to compress trash or
+                        waste
+                        into a smaller, more manageable size, which helps reduce the frequency of disposal and saves
+                        space.
+                        In other areas, such as construction or storage, compactors are used to compress soil,
+                        gravel, or other
+                        materials to create a more solid and stable surface.
+                    </p>
+                </div>
+            </div>
+
+
+            <script>
+                let currentIndex = 0;
+
+                const slidesContainer = document.getElementById('carouselSlides');
+                const slides = Array.from(slidesContainer.children);
+
+                // Clone the first and last slides to make the loop smooth
+                const firstClone = slides[0].cloneNode(true);
+                const lastClone = slides[slides.length - 1].cloneNode(true);
+
+                slidesContainer.appendChild(firstClone); // Append clone of the first slide at the end
+                slidesContainer.insertBefore(lastClone, slides[0]); // Append clone of the last slide at the beginning
+
+                function moveSlide(step) {
+                    const totalSlides = slides.length + 2; // Total slides including clones
+                    currentIndex = (currentIndex + step + totalSlides) % totalSlides; // Loop back logic
+
+                    if (currentIndex === 0 && step === -1) {
+                        setTimeout(() => {
+                            slidesContainer.style.transition = 'none'; // Disable transition temporarily
+                            slidesContainer.style.transform = 'translateX(-100%)'; // Reset to the second slide
+                            currentIndex = 1; // Set index to the second slide after the reset
+                            setTimeout(() => {
+                                slidesContainer.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+                            }, 50);
+                        }, 500); // Wait for the transition to finish
+                    } else {
+                        const offset = -currentIndex * 100;
+                        slidesContainer.style.transform = `translateX(${offset}%)`;
+                    }
+                }
+
+                // Automatic carousel
+                setInterval(() => {
+                    moveSlide(1); // Move to the next slide every 3 seconds (3000ms)
+                }, 3000);
+            </script>
+        </div>
+    </div>
+    <div class="">
+        <div class="relative mt-20  md:ml-11 lg:pr-10 sm:mr-[340px]  ml-3 mr-2 " id="about-us">
+            <h2 class="text-5xl font-bold text-center">About Us</h2>
+            <p class="mx-auto pt-5 md:text-xl lg:text-3xl text-lg sm:text-base w-fit">
+                Myriad Storage System LLP was established in 2018 with the vision of providing high-quality
+                industrial
+                products that exceed the expectations of our respected customers. We guarantee a high-quality
+                service that goes
+                beyond the manufacture of standard office furniture. We are an ever-growing industry in
+                manufacturing racks,
+                storage systems, security lockers for industries, and other high-grade office furniture.
+                <span class="block mt-2">
+                    <a href="about.html" class="text-black underline hover:text-blue-500 font-semibold">Read
+                        More.</a>
+                </span>
+            </p>
+
+        </div>
+        <div
+            class="bg-black h-[0px]  md:top-[1100px] lg:absolute lg:top-[1000px]  xl:pr-10 sm:top-[1100px] sm:right-2   sm:absolute sm:mt-[40px] mt-[-100px] ">
+            <div class="flex justify-center items-center min-h-screen ">
+                <!-- Added pt-16 for navbar spacing -->
+                <div class="bg-white shadow-lg rounded-lg p-6 w-80">
+                    <!-- Company Logo -->
+                    <div class="flex justify-center mb-4">
+                        <img src="images.jpg" alt="Myriad Logo" class="h-20">
+                    </div>
+
+                    <!-- Login Heading -->
+                    <h1 class="text-3xl font-bold text-orange-600 mb-6 flex justify-center">Enquiry</h1>
+
+                    <!-- Login Form -->
+                    <form action="">
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-left font-semibold text-gray-600">Email</label>
+                            <input
+                                class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                                type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <!-- Password Field -->
+                        <div class="mb-6">
+                            <label for="number" class="block text-left font-semibold text-gray-600">Mobile
+                                Number</label>
+                            <input
+                                class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                                type="password" name="password" id="password" placeholder="Enter your Mobile Number">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button
+                            class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+                            type="submit">
+                            <a href="thank.html">Send an Enquiry</a>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative sm:mt-0 mt-[550px]">
+        <!--Product Carosel-->
+        <div class=" mt-16 mx-auto pb-10 ">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5 px-4">
+                <!-- Carousel 1 -->
+
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white">
+                        <div class="relative">
+                            <div class="carousel" id="carousel1">
+                                <img class="w-full h-64 object-cover shadow-lg rounded-lg"
+                                    src="File-Compactor-storage-System.jpg" alt="Image 1">
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+                            <h2 class="text-xl font-semibold text-gray-800">Compactor Storage</h2>
+                            <p class="text-gray-600 text-base">A compactor storage system is a high-density storage
+                                solution that maximizes space by moving shelves or racks to
+                                eliminate unused aisle space. It is often used in offices, warehouses, or archives
+                                to store large volumes of items
+                                efficiently.</p>
+                        </div>
+                        <div class="px-6 py-4 flex">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="pl-4 mt-2 text-gray-700 hover:text-blue-500 cursor-pointer ">Explore More
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--Carosel 2-->
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white h-[535px] ">
+                        <div class="relative">
+                            <div class="carousel" id="carousel2">
+                                <img class="w-full h-[330px] object-cover shadow-lg rounded-lg" src="ped3.jpg"
+                                    alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <h2 class="text-xl font-semibold text-gray-800">Pedestal cabinet</h2>
+                            <p class="text-gray-600 text-sm">A pedestal cabinet is a compact storage unit that
+                                typically sits on a
+                                raised base or pedestal. It is often used for organizing items like files or
+                                personal belongings in
+                                offices or homes, offering efficient, space-saving storage.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-between relative top-[-20px]">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 focus:outline-none">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="pl-4 mt-2 text-gray-700 hover:text-blue-500 cursor-pointer">Explore More
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Carosel 3-->
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white">
+                        <div class="relative">
+                            <div class="carousel" id="carousel3">
+                                <img class="w-full h-[350px] object-cover shadow-lg rounded-lg" src="of2.jpg"
+                                    alt="Image of office locker">
+                            </div>
+                        </div>
+                        <div class="px-6 py-1">
+                            <h2 class="text-xl font-semibold text-gray-800">Office Locker</h2>
+                            <p class="text-gray-600 text-sm">An office locker is a secure storage unit used in
+                                workplaces to store
+                                personal items, documents, or valuables. It typically features lockable compartments
+                                to ensure privacy
+                                and security for employees.</p>
+                        </div>
+                        <div class="px-6 py-4 flex items-center justify-between">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 focus:outline-none">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="mt-2 text-gray-700 hover:text-blue-500 cursor-pointer">Explore More</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Carousel 4 -->
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white h-[555px] ">
+                        <div class="relative">
+                            <div class="carousel" id="carousel4">
+                                <img class="w-full h-[330px] object-cover shadow-lg rounded-lg" src="gym2.jpg"
+                                    alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <h2 class="text-xl font-semibold text-gray-800">Gym Lockers</h2>
+                            <p class="text-gray-600 text-sm">A gym locker is a secure, personal storage unit
+                                typically used in fitness centers to store belongings like clothes,
+                                shoes, and personal items while users work out. These lockers are often lockable,
+                                providing privacy and security.</p>
+                        </div>
+                        <div class="px-6 py-5 flex justify-between relative top-[-20px]">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 focus:outline-none">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="pl-4 mt-2 text-gray-700 hover:text-blue-500 cursor-pointer">Explore More
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel 5 -->
+
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white h-[555px] ">
+                        <div class="relative">
+                            <div class="carousel" id="carousel5">
+                                <img class="w-full h-[330px] object-cover shadow-lg rounded-lg" src="mc2.jpg"
+                                    alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <h2 class="text-xl font-semibold text-gray-800">Mobile Compactor</h2>
+                            <p class="text-gray-600 text-sm">A mobile compactor is a storage system with movable
+                                shelving units mounted on tracks, allowing aisles to be created or
+                                closed to optimize space. It is commonly used in offices, libraries, or warehouses
+                                to maximize storage capacity while
+                                maintaining easy access to stored items.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-between relative top-[-20px]">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 focus:outline-none">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="pl-4 mt-2 text-gray-700 hover:text-blue-500 cursor-pointer">Explore More
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel 6 -->
+                <div class="relative">
+                    <div class="max-w-sm mx-auto mt-16 rounded-lg overflow-hidden shadow-2xl bg-white h-[555px] ">
+                        <div class="relative">
+                            <div class="carousel" id="carousel6">
+                                <img class="w-full h-[330px] object-cover shadow-lg rounded-lg" src="indust.avif"
+                                    alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <h2 class="text-xl font-semibold text-gray-800">Industrial Locker</h2>
+                            <p class="text-gray-600 text-sm">An industrial locker is a robust, heavy-duty storage
+                                unit designed for workplaces, factories, or warehouses. These
+                                lockers are built to withstand harsh conditions and are used to store tools,
+                                equipment, uniforms, and personal items
+                                securely.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-between relative top-[-20px]">
+                            <button
+                                class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-700 hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 focus:outline-none">
+                                <i class="fab fa-whatsapp text-white"></i>
+                                <a href="login2.html"><span>Get Expert Consultation</span></a>
+                            </button>
+                            <a href="login2.html">
+                                <h3 class="pl-4 mt-2 text-gray-700 hover:text-blue-500 cursor-pointer">Explore More
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="relative bg-gray-800 xl:flex lg:h-[300px] md:h-52 h-96">
+        <div class="md:flex">
+            <div class=" flex">
+                <div class="static  text-white ml-10 mt-8  md:float-left md:w-1/4  ">
+
+                    <li class="list-none">Quick links</li>
+                    <li><a href="Home.html" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-500">About us</a></li>
+                    <li><a href="Login.html" class="hover:text-blue-500">Login</a></li>
+
+                </div>
+                <div class="static  text-white   w-80 ml-24 mt-8 mr-2 md:float-left md:w-2/4  ">
+
+                    <li class="list-none">Contact us</li>
+                    <li>Phone number : <a href="tel:+91 8928324499">+91 8928324499</a>
+                    </li>
+                    <li>Email Us : <a href="mailto:myraidstorage@gmail.com">myraidstorage@gmail.com</a>
+                    </li>
+                    <div class="">
+                        <li class="">Address:</li>
+                        <p class="ml-4  ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Reprehenderit
+                            incidunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-white static ml-10 mt-4 md:float-left md:w-1/4   ">
+                <li class="list-none pb-3">Connect with us</li>
+                <li><a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram pb-2"></i> Instagram
+                    </a>
+                </li>
+                <li><a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook pb-2"></i> Facebook
+                    </a>
+                </li>
+                <li><a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </li>
+            </div>
+        </div>
+
+        <div class="lg:block hidden xl:m-2 xl:w-2/4 xl:h-[140px]    ">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7719206.536146262!2d72.848215!3d19.145181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b62d90000001%3A0xef90551fe7fdb712!2sMyriad%20Storage%20System%20LLP!5e0!3m2!1sen!2sus!4v1735470166929!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class=" w-full mt-4  h-[250px] "></iframe>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
