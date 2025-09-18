@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Myriad Storage</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar (Fixed at the top) -->
+    <nav class="bg-gray-800 p-4 w-full fixed top-0 left-0 z-10">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <!-- Logo beside Myriad Storage -->
+            <div class="flex items-center space-x-2">
+                <img src="images.jpg" alt="Myriad Logo" class="h-8 w-8 rounded-full"> <!-- Circular Logo -->
+                <a href="#" class="text-white text-2xl font-semibold">Myriad Storage</a>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="Home.html" class="text-white hover:text-orange-600 transition duration-300">Home</a></li>
+                <li><a href="login.html" class="text-white hover:text-orange-600 transition duration-300">Login</a></li>
+                <li><a href="home.html#about-us" class="text-white hover:text-orange-600 transition duration-300">About
+                        Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="flex justify-center items-center min-h-screen pt-16"> <!-- Added pt-16 for navbar spacing -->
+        <div class="bg-white shadow-lg rounded-lg p-6 w-80">
+            <!-- Company Logo -->
+            <div class="flex justify-center mb-4">
+                <img src="images.jpg" alt="Myriad Logo" class="h-20">
+            </div>
+
+            <!-- Login Heading -->
+            <h1 class="text-3xl font-bold text-orange-600 mb-6">Login</h1>
+
+            <!-- Login Form -->
+            <form action="">
+                <!-- Email Field -->
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold text-gray-600">Email</label>
+                    <input
+                        class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                        type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-6">
+                    <label for="password" class="block text-left font-semibold text-gray-600">Password</label>
+                    <input
+                        class="w-full border border-gray-300 px-3 py-2 rounded focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                        type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+                    type="submit">
+                    Login
+                </button>
+                <div class="mt-4 text-center">
+                    <a href="Signup.html" class="text-orange-600 hover:text-orange-700 font-semibold">Create an
+                        Account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
